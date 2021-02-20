@@ -15,7 +15,7 @@ We want to produce high-fidelity temperature predictions for a mountainous, cost
 </div>
 
 We have access to a Regional Climate Model (RCM) which can compute these predictions, but it is prohibitively expensive to run for the whole region of interest.
-We also have access to a Global Climate Model (GCM) which can compute inexpensive, low-fidelity temperature and wind speed predictions, as well as high-fidelity altitude data.
+We also have access to high-fidelity altitude data and a Global Climate Model (GCM) which can compute inexpensive, low-fidelity temperature and wind speed predictions.
 
 <div style="witdh: 100%;">
     <div style="float:left; width: 33%; text-align: center;">
@@ -35,7 +35,7 @@ We also have access to a Global Climate Model (GCM) which can compute inexpensiv
     </div>
 </div>
 
-Instead, we use the RCM to produce high-fidelity temperature predictions over small regions within the region of interest. These are much less expensive to produce. We use [Gaussian Processes](https://www.youtube.com/watch?v=U85XFCt3Lak) combine these predictions with the low-fidelity temperature predictions from the GCM and the high-fidelity altitude data to infer the high-fidelity temperature predictions over the entire region of interest.
+We use the RCM to produce high-fidelity temperature predictions over small regions within the region of interest. These are much less expensive to produce. Then, we use [Gaussian Processes](https://www.youtube.com/watch?v=U85XFCt3Lak) combine these predictions with the low-fidelity temperature predictions from the GCM and the high-fidelity altitude data to infer the high-fidelity temperature predictions over the entire region of interest.
 
 For example:
 <div style="witdh: 100%;">
