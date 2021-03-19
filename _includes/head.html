@@ -9,11 +9,14 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
+  <!-- analytics -->
+  <script data-goatcounter="https://ben-hudson.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
   <!-- for mathjax support -->
   {% if page.use_mathjax %}
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
     </script>
     <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-{% endif %}
+  {% endif %}
 </head>
